@@ -7,10 +7,10 @@ RUN \
     apt-get -q -y install libopencv-dev build-essential checkinstall cmake pkg-config && \
     apt-get -q -y install yasm libtiff4-dev libjpeg-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev && \
     apt-get -q -y install libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev python-dev && \
-    apt-get -q -y install python-numpy libtbb-dev libqt4-dev libgtk2.0-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev
-    #   libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils
-#    apt-get upgrade -q -y && \
-#    rm -rf /var/lib/apt/lists/*
+    apt-get -q -y install python-numpy libtbb-dev libqt4-dev libgtk2.0-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev && \
+    apt-get -q -y install libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils && \
+    apt-get upgrade -q -y && \
+    rm -rf /var/lib/apt/lists/*
     
     
 #RUN \ 
